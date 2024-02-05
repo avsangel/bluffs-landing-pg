@@ -5,11 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Welcome to Scottsbluff</title>
     <style>
+      .container {
+        max-width: 1400px;
+        margin: 0 auto;
+      }
       body {
+      }
+      header {
         background-image: url("https://www.journeyoflight.com/journey12/photographs/color/midwest/larger/IMG_6141-scottsbluff-reflection-sunrise.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
       }
       h1 {
-        text-align: center;
+        font-weight: 700;
+        font-size: 96px;
+        line-height: 1.5;
+      }
+      h2 {
+        color: lightgoldenrodyellow;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 1.5;
+      }
+      h3 {
+        font-weight: 900;
+        font-size: 30px;
+        line-height: 1.5;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
       }
       p {
         text-align: center;
@@ -18,50 +44,52 @@
       }
       footer {
         text-align: center;
-        color: white;
-        display: block;
       }
     </style>
   </head>
   <body>
-    <h1>
-      Scottsbluff National Monument <br />🌽🇺🇸 Located in the Panhandle of
-      Nebraska
-    </h1>
+    <div class="container">
+      <header>
+        <h3>.TRAVEL.</h3>
+        <h1>Scottsbluff National Monument</h1>
+        <h2>🌽🇺🇸 Located in the Panhandle of Nebraska</h2>
+        <button><a href="#"> Learn More</a></button>
+      </header>
 
-    <p>
-      This was an important monument for the settlers, otherwise known as
-      pioneers, who were going west across American. The Scottsbluff National
-      Monument was a halfway point on the Oregon Trail.
+      <p>
+        This was an important monument for the settlers, otherwise known as
+        pioneers, who were going west across American. The Scottsbluff National
+        Monument was a halfway point on the Oregon Trail.
+        <br />
+        During Wold War II, the Monument was used as a dog training base.
+        <br />
+        Not only does this rock contain so much history, but it is absolutely
+        beaustiful. Its beauty has captured the eye of many big time
+        photographers and directors.
+      </p>
       <br />
-      During Wold War II, the Monument was used as a dog training base.
       <br />
-      Not only does this rock contain so much history, but it is absolutely
-      beaustiful. Its beauty has captured the eye of many big time photographers
-      and directors.
-    </p>
-    <br />
-    <br />
-    <hr />
-    <div class="container-fluid">
-      <div class="embed-responsive embed-responsive-4by3">
-        <iframe
-          class="embed-responsive-item"
-          src="https://archive.org/embed/msdos_Oregon_Trail_The_1990"
-          frameborder="0"
-          webkitallowfullscreen="true"
-          mozallowfullscreen="true"
-          allowfullscreen
-        ></iframe>
+      <hr />
+      <div class="container-fluid">
+        <div class="embed-responsive embed-responsive-4by3">
+          <iframe
+            class="embed-responsive-item"
+            src="https://archive.org/embed/msdos_Oregon_Trail_The_1990"
+            frameborder="0"
+            webkitallowfullscreen="true"
+            mozallowfullscreen="true"
+            allowfullscreen
+          ></iframe>
+        </div>
       </div>
+      <hr />
+      <footer>
+        This site was coded by Alesia Shope, open - sourced on
+        <a href="https://github.com/avsangel/bluffs-landing-pg" target="_blank"
+          >github
+        </a>
+        , and hosted on netily
+      </footer>
     </div>
-    <hr />
-    <footer>
-      This site was coded by Alesia Shope, open - sourced on
-      <a href="https://github.com/avsangel/bluffs-landing-pg" target="_blank"
-        >github
-      </a>
-      , and hosted on netily
-    </footer>
   </body>
 </html>
