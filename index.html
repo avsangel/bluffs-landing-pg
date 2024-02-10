@@ -42,7 +42,7 @@
         line-height: 1.5;
         margin: 0;
       }
-      h3 {
+      header h3 {
         font-weight: 900;
         font-size: 30px;
         line-height: 1.5;
@@ -59,7 +59,54 @@
         margin-top: 25px;
         border-radius: 10px;
       }
-      @media (max-width: 900px) {
+      footer {
+        color: lightgoldenrodyellow;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+          ),
+          url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/114/791/original/images.jpeg?1707571990");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 100px 0;
+      }
+      footer h3 {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 30px;
+      }
+      footer p {
+        color: lightgoldenrodyellow;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        opacity: 0.9;
+        margin-right: 20px;
+      }
+      footer ul {
+        padding: 0;
+      }
+      footer li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      footer a {
+        color: yellow;
+        opacity: 0.7;
+      }
+      section {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      p {
+        color: gray;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 2fr 2fr;
+      }
+      @media (max-width: 960px) {
         header {
           padding: 60px 0;
         }
@@ -72,14 +119,6 @@
         header h3 {
           font-size: 12px;
         }
-      }
-      p {
-        text-align: center;
-        font-weight: 900;
-        color: gray;
-      }
-      footer {
-        text-align: center;
       }
     </style>
   </head>
@@ -120,11 +159,53 @@
       </div>
       <hr />
       <footer>
-        This site was coded by Alesia Shope, open - sourced on
-        <a href="https://github.com/avsangel/bluffs-landing-pg" target="_blank"
-          >github
-        </a>
-        , and hosted on netily
+        <section class="grid">
+          <div>
+            <h3>More about Scootsbluff National Monument</h3>
+            <ul>
+              <li>
+                <a href="https://www.flyscottsbluff.com/" target="_blank"
+                  >Scottsbluff Airport
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://maps.app.goo.gl/ARbeV4iANvNZm937A"
+                  target="_blank"
+                >
+                  Map of Scottsbluff
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://maps.app.goo.gl/hXBpu2BhxaovE5c58"
+                  target="_blank"
+                >
+                  Map of Gering
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3>About Me</h3>
+            <p>
+              Hi my name is Alesia Shope. I was born and raised in Scottsbluff!
+              I love the beauty and history of this beautiful landmark.
+            </p>
+          </div>
+          <div>
+            <h3>About this website</h3>
+            <p>Created this as a tribute to a place I will always call home.</p>
+
+            This site was coded by Alesia Shope, open - sourced on
+            <a
+              href="https://github.com/avsangel/bluffs-landing-pg"
+              target="_blank"
+              >github
+            </a>
+            , and hosted on netily
+          </div>
+        </section>
       </footer>
     </div>
   </body>
