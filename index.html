@@ -10,6 +10,11 @@
         margin: 0 auto;
       }
       body {
+        background: linear-gradient(
+          44.8deg,
+          rgba(255, 136, 102, 0.67) -53.1%,
+          rgba(255, 221, 136, 0.28) 49%
+        );
       }
 
       header {
@@ -35,7 +40,7 @@
 
         margin: 0;
       }
-      h2 {
+      header h2 {
         color: lightgoldenrodyellow;
         font-weight: 400;
         font-size: 40px;
@@ -68,7 +73,6 @@
           url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/114/791/original/images.jpeg?1707571990");
         background-repeat: no-repeat;
         background-size: cover;
-        padding: 100px 0;
       }
       footer h3 {
         font-weight: 700;
@@ -81,7 +85,6 @@
         font-size: 16px;
         line-height: 24px;
         opacity: 0.9;
-        margin-right: 20px;
       }
       footer ul {
         padding: 0;
@@ -98,13 +101,48 @@
       section {
         max-width: 1200px;
         margin: 0 auto;
+        padding: 100px 0;
+      }
+      main {
+        background-color: white;
+      }
+      main h2 {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.5;
+        opacity: 0.3;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        margin: 0;
+      }
+      main h3 {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 1.5;
+        margin: 0;
+      }
+      main p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        opacity: 0.7;
       }
       p {
         color: gray;
       }
       .grid {
         display: grid;
+        grid-gap: 64px;
+      }
+      .grid-2-columns {
+        grid-template-columns: 1fr 1fr;
+      }
+      .grid-3-columns {
         grid-template-columns: 1fr 2fr 2fr;
+      }
+      .img-responsive {
+        max-width: 100%;
       }
       @media (max-width: 960px) {
         header {
@@ -119,6 +157,13 @@
         header h3 {
           font-size: 12px;
         }
+        .grid {
+          grid-template-columns: 1fr;
+          grid-gap: 32px;
+        }
+        section {
+          padding: 30px;
+        }
       }
     </style>
   </head>
@@ -130,18 +175,37 @@
         <h2>🌽🇺🇸 Located in the Panhandle of Nebraska</h2>
         <button><a href="#"> Learn More</a></button>
       </header>
+      <main>
+        <section class="grid grid-2-columns">
+          <div>
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/114/837/original/9209146d086faabbf85006a44137a46c_2017BrianPoffenbergerMitchellPasssunset1.jpeg?1707592968"
+              alt="Scottsbluff National monument at sunset"
+              class="img-responsive"
+              width="800px"
+            />
+          </div>
+          <div>
+            <h2>Why visit the Scottsbluff National Monument?</h2>
+            <h3>The Rock of the Bluffs!</h3>
 
-      <p>
-        This was an important monument for the settlers, otherwise known as
-        pioneers, who were going west across American. The Scottsbluff National
-        Monument was a halfway point on the Oregon Trail.
-        <br />
-        During Wold War II, the Monument was used as a dog training base.
-        <br />
-        Not only does this rock contain so much history, but it is absolutely
-        beaustiful. Its beauty has captured the eye of many big time
-        photographers and directors.
-      </p>
+            <p>
+              This was an important monument for the settlers, otherwise known
+              as pioneers, who were going west across American. The Scottsbluff
+              National Monument was a halfway point on the Oregon Trail.
+            </p>
+            <p>
+              During Wold War II, the Monument was used as a dog training base.
+            </p>
+
+            <p>
+              Not only does this rock contain so much history, but it is
+              absolutely beaustiful. Its beauty has captured the eye of many big
+              time photographers and directors.
+            </p>
+          </div>
+        </section>
+      </main>
       <br />
       <br />
       <hr />
@@ -159,7 +223,7 @@
       </div>
       <hr />
       <footer>
-        <section class="grid">
+        <section class="grid grid-3-columns">
           <div>
             <h3>More about Scootsbluff National Monument</h3>
             <ul>
