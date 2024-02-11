@@ -149,12 +149,20 @@
         grid-template-columns: 1fr 1fr 1fr;
       }
       .img-responsive {
-        max-width: 100%;
+        width: 100%;
       }
       .card {
         background-color: white;
         margin: 30px 0;
       }
+      .card-header.grid {
+        grid-gap: 0;
+      }
+      .embed {
+        width: 100%;
+        aspect-ratio: 1/1;
+      }
+
       .card-body {
         padding: 30px;
       }
@@ -198,6 +206,12 @@
         }
         section {
           padding: 30px;
+        }
+        .card-header img {
+          display: none;
+        }
+        .embed {
+          aspect-ratio: 16/9;
         }
       }
     </style>
@@ -247,11 +261,21 @@
           <div class="grid grid-3-columns-cards">
             <div class="card">
               <div class="card-header">
-                <img
-                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/114/845/original/CD1O2354-scaled-1-600x400.jpeg?1707603240"
-                  alt="beer garden"
-                  class="img-responsive"
-                />
+                <div class="card-header grid grid-2-columns">
+                  <img
+                    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/114/845/original/CD1O2354-scaled-1-600x400.jpeg?1707603240"
+                    alt="beer garden"
+                    class="img-responsive"
+                  />
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2973.2562494531653!2d-103.66309902465461!3d41.822779971247755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876551386f7eeeff%3A0xd757372ef0ae123f!2sThe%20Union%20Bar%20and%20Grill!5e0!3m2!1sen!2sus!4v1707629595660!5m2!1sen!2sus"
+                    class="embed"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
               </div>
               <div class="card-body">
                 <h4>Beer Garden</h4>
@@ -280,11 +304,21 @@
 
             <div class="card">
               <div class="card-header">
-                <img
-                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/114/846/original/unnamed.png?1707603374"
-                  alt="The Carnival"
-                  class="img-responsive"
-                />
+                <div class="card-header grid grid-2-columns">
+                  <img
+                    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/114/846/original/unnamed.png?1707603374"
+                    alt="The Carnival"
+                    class="img-responsive"
+                  />
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2973.7397830356185!2d-103.68282972465529!3d41.81236577124898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8765512a485b0ab5%3A0xbc95e74608524b4c!2sFive%20Rocks%20Amphitheater!5e0!3m2!1sen!2sus!4v1707620342290!5m2!1sen!2sus"
+                    class="embed"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
               </div>
               <div class="card-body">
                 <h4>The Carnival</h4>
@@ -315,11 +349,21 @@
             </div>
             <div class="card">
               <div class="card-header">
-                <img
-                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/114/847/original/unnamed-1.png?1707603426"
-                  alt="concert"
-                  class="img-responsive"
-                />
+                <div class="card-header grid grid-2-columns">
+                  <img
+                    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/114/847/original/unnamed-1.png?1707603426"
+                    alt="concert"
+                    class="img-responsive"
+                  />
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2973.7397830356185!2d-103.68282972465529!3d41.81236577124898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8765512a485b0ab5%3A0xbc95e74608524b4c!2sFive%20Rocks%20Amphitheater!5e0!3m2!1sen!2sus!4v1707620342290!5m2!1sen!2sus"
+                    class="embed"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
               </div>
               <div class="card-body">
                 <h4>The Concert</h4>
