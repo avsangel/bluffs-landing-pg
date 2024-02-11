@@ -58,7 +58,7 @@
         background-color: lightgoldenrodyellow;
         text-decoration: none;
         padding: 16px 32px;
-        margin-top: 25px;
+        margin-top: 15px;
         border-radius: 10px;
       }
       footer {
@@ -96,9 +96,16 @@
         opacity: 0.7;
       }
       section {
-        max-width: 1200px;
+        max-width: 100%;
         margin: 0 auto;
-        padding: 100px 0;
+        padding: 100px;
+      }
+      .secondary {
+        background-color: lightgray;
+      }
+      .secondary h2,
+      h3 {
+        text-align: center;
       }
       main {
         background-color: white;
@@ -126,7 +133,7 @@
         opacity: 0.7;
       }
       p {
-        color: gray;
+        color: black;
       }
       .grid {
         display: grid;
@@ -138,8 +145,39 @@
       .grid-3-columns {
         grid-template-columns: 1fr 2fr 2fr;
       }
+      .grid-3-columns-cards {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
       .img-responsive {
         max-width: 100%;
+      }
+      .card {
+        background-color: white;
+        margin: 30px 0;
+      }
+      .card-body {
+        padding: 30px;
+      }
+      .card-footer {
+        padding: 0 30px 30px;
+      }
+      .card-button {
+        display: block;
+        background-color: lightgoldenrodyellow;
+        text-decoration: none;
+        border-radius: 10px;
+      }
+      h4 {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1;
+        margin: 0;
+      }
+      h5 {
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 1;
+        margin: 0;
       }
       @media (max-width: 960px) {
         header {
@@ -200,6 +238,111 @@
               absolutely beaustiful. Its beauty has captured the eye of many big
               time photographers and directors.
             </p>
+            <p>Every Summer the city of Gering holds Oregon Trail Days!</p>
+          </div>
+        </section>
+        <section class="secondary">
+          <h2>Oregon Trail Days</h2>
+          <h3>My favorite Oregon Trail Days activites</h3>
+          <div class="grid grid-3-columns-cards">
+            <div class="card">
+              <div class="card-header">
+                <img
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/114/845/original/CD1O2354-scaled-1-600x400.jpeg?1707603240"
+                  alt="beer garden"
+                  class="img-responsive"
+                />
+              </div>
+              <div class="card-body">
+                <h4>Beer Garden</h4>
+                <p>
+                  The beer garden is a huge street dance Friday and Saturday
+                  night during Oregon Trail days. There is always a local cover
+                  band that jams the night away. So much fun!
+                </p>
+                <h5>Location:</h5>
+                <p>
+                  Held at one of the bars on Gering's main street. They block
+                  off the entire block for the street dance.
+                </p>
+              </div>
+              <div class="card-footer">
+                <button class="card-button">
+                  <a
+                    href="https://maps.app.goo.gl/v8SNFVztX4H5aH3VA"
+                    target="_blank"
+                  >
+                    The Union Bar
+                  </a>
+                </button>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <img
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/114/846/original/unnamed.png?1707603374"
+                  alt="The Carnival"
+                  class="img-responsive"
+                />
+              </div>
+              <div class="card-body">
+                <h4>The Carnival</h4>
+                <p>
+                  During Oregon Trail Days weekend, there is a huge carnival.
+                  The Carnival is in town from Thursday - Sunday. Growing up, my
+                  friends and I lived for this carnival!
+                </p>
+                <br />
+                <h5>Location:</h5>
+                <p>
+                  This carnival is held in a giant field on the outskirts of
+                  town.
+                </p>
+                <br />
+                <br />
+              </div>
+              <div class="card-footer">
+                <button class="card-button">
+                  <a
+                    href="https://maps.app.goo.gl/d7RymwrueFxah6Gx8"
+                    target="_blank"
+                  >
+                    The Carnival
+                  </a>
+                </button>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <img
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/114/847/original/unnamed-1.png?1707603426"
+                  alt="concert"
+                  class="img-responsive"
+                />
+              </div>
+              <div class="card-body">
+                <h4>The Concert</h4>
+                <p>
+                  During Oregon Trail Days weekend, there is also a huge concert
+                  with a pretty big name country singer or band. Growing up, my
+                  friends and I lived for this concert! We were always so
+                  excited to see what act was coming to our small town.
+                </p>
+                <h5>Location:</h5>
+                <p>The Concert is held at Five Rocks Amphitheater</p>
+              </div>
+              <div class="card-footer">
+                <button class="card-button">
+                  <a
+                    href="https://maps.app.goo.gl/d7RymwrueFxah6Gx8"
+                    target="_blank"
+                  >
+                    Five Rocks
+                  </a>
+                </button>
+              </div>
+            </div>
           </div>
         </section>
       </main>
